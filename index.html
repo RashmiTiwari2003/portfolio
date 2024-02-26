@@ -8,11 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<link rel="stylesheet" href="./style.css">
+
 <body class="flex flex-col">
 
-    <div id="home" class="bg-[url('home_bg_cropped.jpg')] bg-cover bg-center">
+    <div id="home" class="opacity-85 bg-[url('./images/home_bg_cropped.jpg')] bg-cover bg-center">
         <nav id="navbar" class="flex flex-wrap w-full bg-transparent">
-            <div id="" class="text-black font-mono text-3xl py-4 px-4 ml-auto">
+            <div id="nav-items" class="text-black font-serif text-3xl py-4 px-4 ml-auto">
                 <a class="px-4 scroll-smooth" href="#home">Home</a>
                 <a class="px-4 scroll-smooth" href="#about">About</a>
                 <a class="px-4 scroll-smooth" href="#skills">Skills</a>
@@ -22,99 +24,96 @@
         </nav>
 
         <div>
-            <div class="flex flex-col w-full min-h-[calc(100vh-68px)] items-center justify-center">
-                <div class="text-slate-300 py-4">Hey, This is Rashmi Tiwari</div>
-                <div id="qualities" class="text-slate-300 py-4"></div>
-                <p class="text-slate-300 py-4">This is About Me</p>
+            <div id="home_arr" class="flex flex-col w-full min-h-[80vh] items-center justify-center font-serif text-2xl text-black">
+                <div class="py-2">Hey, This is Rashmi Tiwari</div>
+                <div id="qualities" class="py-4 italic font-bold"></div>
+                <p class="py-2">This is About Me</p>
             </div>
         </div>
     </div>
 
-    <div id="about" class="flex flex-row w-full h-auto py-20 bg-slate-300 items-center justify-center">
-        <div class="bg-[url('about_me.jpg')] bg-cover bg-center w-80 h-80 rounded-2xl"></div>
+    <div id="about" class="flex flex-row w-full min-h-[80vh] py-20  items-center justify-center">
+        <div class="bg-[url('./images/about_me.jpg')] bg-cover bg-center w-80 h-80 rounded-2xl"></div>
 
-        <div class="flex flex-col text-black px-8 h-80 w-96">
+        <div id="desc" class="flex flex-col text-black px-8 h-80 w-96">
             <h1 class="py-4 font-mono font-medium text-3xl">About Me</h1>
             <p class="py-6 text-base font-mono">Here are some facts and intriguing insights about me. I am gonna list
                 them out and explain in a minute.</p>
-            <button id="CV" class="mr-auto text-2xl bg-red-500 px-4 py-2 rounded-2xl text-white font-mono"><a
+            <button id="CV" class="mr-auto text-2xl bg-red-500 px-4 py-2 rounded-2xl text-white font-mono hover:bg-blue-600 transition duration-300 ease-in-out"><a
                     href="">Download CV</a></button>
         </div>
     </div>
 
-    <div id="skills" class="flex flex-col my-16 w-full h-auto justify-center items-center">
-        <h1 class="font-mono font-bold text-4xl">Skills</h1>
+    <div id="skills" class="flex flex-col w-full min-h-[80vh] bg-blue-50 justify-center items-center">
+        <h1 class="font-serif italic font-bold text-4xl mt-5">Skills</h1>
         <div class="flex flex-wrap justify-center items-center my-10 gap-8">
-            <div id="frontend" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">Frontend Development</div>
+            <div id="frontend" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/frontend.png')] bg-cover bg-center"></div>
+                <div class="text-xl mr-2 font-mono">Frontend Development</div>
             </div>
-            <div id="HTML" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">HTML</div>
+            <div id="HTML" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/html.png')] bg-cover"></div>
+                <div class="text-xl mr-2 font-mono">HTML</div>
             </div>
-            <div id="CSS" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">CSS</div>
+            <div id="CSS" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/css.png')] bg-cover"></div>
+                <div class="text-xl mr-2 font-mono">CSS</div>
             </div>
-            <div id="JavaScript" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">JavaScript</div>
+            <div id="JavaScript" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/js.png')] bg-cover"></div>
+                <div class="text-xl mr-2 font-mono">JavaScript</div>
             </div>
-            <div id="Java" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">Java</div>
+            <div id="Java" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/java.png')] bg-cover"></div>
+                <div class="text-xl mr-2 font-mono">Java</div>
             </div>
-            <div id="Python" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">Python</div>
+            <div id="Python" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/python.png')] bg-cover"></div>
+                <div class="text-xl mr-2 font-mono">Python</div>
             </div>
-            <div id="MySQL" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg justify-center items-center">
-                <div class="m-4 h-10 w-10 bg-[url('hvm.ico')] bg-cover rounded-full"></div>
-                <div class="text-xl mr-2">MySQL</div>
+            <div id="MySQL" class="flex flex-row bg-pink-300 h-24 w-60 rounded-lg items-center">
+                <div class="m-4 h-10 w-10 bg-[url('./images/sql.png')] bg-cover"></div>
+                <div class="text-xl mr-2 font-mono">MySQL</div>
             </div>
         </div>
     </div>
 
-    <div id="projects" class="flex flex-col my-16 w-full h-auto justify-center items-center">
-        <h1 class="font-mono font-bold text-4xl">Projects</h1>
+    <div id="projects" class="flex flex-col w-full min-h-[80vh] justify-center items-center">
+        <h1 class="font-serif italic font-bold text-4xl mt-5">Projects</h1>
 
-        <div class="flex flex-wrap justify-center items-center my-10 gap-8">
-            <div id="mynotebook" class="flex flex-col bg-gray-400 h-72 w-96 justify-center items-center rounded-lg"><a
+        <div id="project" class="flex flex-wrap justify-center items-center my-10 gap-8">
+            <div id="mynotebook" class="flex flex-col bg-blue-50 h-72 w-96 justify-center items-center rounded-lg"><a
                     href="https://rashmitiwari2003.github.io/Noted/" target="_blank">
-                    <div class="bg-[url('Noted.png')] bg-cover h-52 w-80 rounded-md"></div>
-                    <div class="text-xl py-2">My NoteBook</div>
+                    <div id="image" class="bg-[url('./images/Noted.png')] bg-cover h-52 w-80 rounded-md"></div>
+                    <div class="text-xl p-2 text font-mono">My NoteBook</div>
                 </a>
             </div>
-            <div id="clock" class="flex flex-col bg-gray-400 h-72 w-96 justify-center items-center rounded-lg"><a
+            <div id="clock" class="flex flex-col bg-blue-50 h-72 w-96 justify-center items-center rounded-lg"><a
                     href="" target="_blank">
-                    <div class="bg-[url('Noted.png')] bg-cover h-52 w-80 rounded-md"></div>
-                    <div class="text-xl py-2">Clock</div>
+                    <div id="image" class="bg-[url('./images/Noted.png')] bg-cover h-52 w-80 rounded-md"></div>
+                    <div class="text-xl p-2 font-mono">Clock</div>
                 </a>
             </div>
-            <div id="dataset" class="flex flex-col bg-gray-400 h-72 w-96 justify-center items-center rounded-lg"><a
+            <div id="dataset" class="flex flex-col bg-blue-50 h-72 w-96 justify-center items-center rounded-lg"><a
                     href="" target="_blank">
-                    <div class="bg-[url('Noted.png')] bg-cover h-52 w-80 rounded-md"></div>
-                    <div class="text-xl py-2">Another Project</div>
+                    <div id="image" class="bg-[url('./images/Noted.png')] bg-cover h-52 w-80 rounded-md"></div>
+                    <div class="text-xl p-2 font-mono">Another Project</div>
                 </a>
             </div>
         </div>
     </div>
 
     <div id="contact" class="flex flex-col bg-gray-700 py-8 w-full h-auto justify-center items-center">
-        <div class="bg-[url('Noted.png')] bg-cover h-24 w-24 rounded-full"></div>
-
-        <div class="my-6 text-white text-lg">Thank you for visiting my Website</div>
+        <div class="bg-[url('./images/thanks.png')] bg-cover h-24 w-24 my-4"></div>
 
         <div class="flex flex-wrap justify-center items-center gap-8">
             <div id="linkedin" class="flex flex-row justify-center items-center">
-                <div class="bg-[url('Noted.png')] bg-cover h-10 w-10 rounded-md"></div>
-                <div class="text-xl py-2 px-4"><a
-                        href="https://www.linkedin.com/in/rashmi-tiwari-445129179/">LinkedIN</a></div>
+                <div class="bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png?20140125013055')] bg-cover h-10 w-10 rounded-md"></div>
+                <div class="text-xl py-2 px-4 text-white"><ahref="https://www.linkedin.com/in/rashmi-tiwari-445129179/">LinkedIN</a></div>
             </div>
             <div id="github" class="flex flex-row justify-center items-center">
-                <div class="bg-[url('Noted.png')] bg-cover h-10 w-10 rounded-md"></div>
-                <div class="text-xl py-2 px-4"><a href="https://github.com/RashmiTiwari2003">GitHub</a></div>
+                <div class="bg-[url('https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png')] bg-cover h-10 w-10 rounded-md"></div>
+                <div class="text-xl py-2 px-4 text-white"><a href="https://github.com/RashmiTiwari2003">GitHub</a></div>
             </div>
         </div>
     </div>

@@ -1,0 +1,63 @@
+@media screen and (max-width: 600px)
+{
+    #nav-items
+    {
+        font-size: smaller;
+    }
+
+    #nav-items > a
+    {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    #about
+    {
+        padding-left: 8px;
+    }
+
+    #about > div
+    {
+        height: 250px;
+    }
+
+    #desc > h1
+    {
+        padding: 2px 0px;
+        font-size: x-large;
+    }
+
+    #desc > p
+    {
+        padding: 12px 0px;
+        font-size: small;
+    }
+
+    #CV
+    {
+        font-size: small;
+    }
+
+    #projects
+    {
+        margin: 10px 0px;
+    }
+
+
+    #project > div
+    {
+        height: 250px; 
+        width: 270px;
+    }
+
+    #image
+    {
+        height: 170px;
+        width: 234px;
+    }
+
+    #home_arr
+    {
+        font-size: medium;
+    }
+}
