@@ -16,9 +16,15 @@
         padding-left: 8px;
     }
 
-    #about > div
+    #about_pic
     {
         height: 250px;
+    }
+
+    #desc
+    {
+        padding: 0px 12px;
+        height: 320px;
     }
 
     #desc > h1
@@ -29,8 +35,8 @@
 
     #desc > p
     {
-        padding: 12px 0px;
-        font-size: small;
+        padding: 6px 0px;
+        font-size: xx-small;
     }
 
     #CV
@@ -54,10 +60,5 @@
     {
         height: 170px;
         width: 234px;
-    }
-
-    #home_arr
-    {
-        font-size: medium;
     }
 }
